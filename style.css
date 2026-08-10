@@ -1,12 +1,24 @@
+body
+{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    background-image: url("images/main_background.png");
+    background-repeat: no-repeat;
+}
 .main
 {
+    width: 100%;
     color:#515076;
     font-size: 70px;
     font-weight: 400;
     line-height: 78px;
     margin: 0;
     text-align:center;
-
+    padding:100 px 0;
+    box-sizing:border-box;
+    font-family:'montserrat', sans-serif;
 }
 .clue
 {
@@ -15,30 +27,33 @@
     font-weight: 400;
     line-height: 24px;
     margin: 0;
+    font-family:'montserrat', sans-serif;
 }
 .name
 {
     color: #515076;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 27px;
+    font-family:'montserrat', sans-serif;
 }
 
 .list
 {
     color: #515076;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 400px;
     line-height: 18px;
-
+    width: 250px;
+    font-family:'montserrat', sans-serif;
 }
 .price
 {
     color: #515076;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 24px;
-    margin: 0;
+    font-family:'montserrat', sans-serif;
 }
 .probel
 {
