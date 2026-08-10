@@ -7,6 +7,14 @@ body
     background-image: url("images/main_background.png");
     background-repeat: no-repeat;
 }
+li
+{
+    margin-left: 0;
+    text-indent:0;
+    margin-bottom:4px;
+
+    
+}
 .main
 {
     width: 100%;
@@ -44,8 +52,13 @@ body
     font-size: 13px;
     font-weight: 400px;
     line-height: 18px;
-    width: 250px;
+    width: 300px;
     font-family:'montserrat', sans-serif;
+    margin:0;
+    padding:0;
+    margin-top:10px;
+    margin-bottom: 15px;
+    list-style-position: inside;
 }
 .price
 {
