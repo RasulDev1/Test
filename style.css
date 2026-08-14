@@ -131,3 +131,15 @@ body
     font-family:"montserrat", sans-serif;
 
 }
+.button
+{
+    height: 20px;
+}
+.color {
+  color: red;
+}
+
+.color.color-one 
+{
+  color: #8B00FF ;
+}
