@@ -1,8 +1,8 @@
-function Weather(city, temperature,) // Функция для определения темпераутуры в городе
+function weather(city, temperature,) // Функция для определения темпераутуры в городе
 {
     console.log(`В городе ${city} сейчас ${temperature} градусов`);
 }
-Weather('Ачхой-Мартан', 30)
+weather('Ачхой-Мартан', 30)
 
 let speed = 299792458; // Скорость света в м/с
 
@@ -34,7 +34,7 @@ function product(budget)
 
 product(3000)
 
-function MyFunction(a, b) // Функция для сложения двух чисел
+function myfunction(a, b) // Функция для сложения двух чисел
 {
     return 0;
 }
