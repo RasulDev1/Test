@@ -1,27 +1,27 @@
 //Покраска всех карточек
 const productCards = document.querySelectorAll('.product-card');
-const ChangeColorAllButton = document.querySelector('#ChangeColorAll');
-const GreenColorHash = '#00FF00';
-const BlueColorHash = '#0000FF';
-const RedColorHash = '#FF0000';
-const BlackColorHash = '#000000'
+const changecolorallbutton = document.querySelector('#change-color-all');
+const greencolorhash = '#00FF00';
+const bluecolorhash = '#0000FF';
+const redcolorhash = '#FF0000';
+const blackcolorhash = '#000000'
 
-ChangeColorAllButton.addEventListener('click', () => {
-    productCards.forEach((card) => card.style.backgroundColor = GreenColorHash)
+changecolorallbutton.addEventListener('click', () => {
+    productCards.forEach((card) => card.style.backgroundColor = greencolorhash)
 });
 
 //Покраска первой карточки
-const FirstProductCard = document.querySelector('.product-card');
-const ChangeColorFirstButton = document.querySelector('#ChangeColorFirst');
+const firstproductcard = document.querySelector('.product-card');
+const changecolorfirstbutton = document.querySelector('#change-color-first');
 
-ChangeColorFirstButton.addEventListener('click', () => {
-    FirstProductCard.style.backgroundColor = BlueColorHash
+changecolorfirstbutton.addEventListener('click', () => {
+    firstproductcard.style.backgroundColor = bluecolorhash
 });
 
-const OpenGoogleButton = document.querySelector('#open-google');
-OpenGoogleButton.addEventListener('click', OpenGoogle)
+const opengooglebutton = document.querySelector('#open-google');
+opengooglebutton.addEventListener('click', opengoogle)
 
-function OpenGoogle() 
+function opengoogle()
 {
     const answer = confirm("Вы хотите открыть Google?")
 
@@ -33,9 +33,9 @@ function OpenGoogle()
 }
 
 // Вывод консоль лог
-const OutputLogButton = document.querySelector('#output-console-log');
+const outputlogbutton = document.querySelector('#output-console-log');
 
-OutputLogButton.addEventListener('click',() => outputConsoleLog('Дз 4'));
+outputlogbutton.addEventListener('click',() => outputConsoleLog('Дз 4'));
 
 function outputConsoleLog(message) {
     alert("10")
@@ -51,8 +51,8 @@ titles.addEventListener('mouseover', function() {
 
 // переключение цветов кнопки
 
-const Colorchanger = document.querySelector('.color');
-Colorchanger.addEventListener('click', () =>
+const colorchanger = document.querySelector('.color');
+colorchanger.addEventListener('click', () =>
 {
-    Colorchanger.classList.toggle('color-one');
+    colorchanger.classList.toggle('color-one');
 });
