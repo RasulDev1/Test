@@ -134,11 +134,12 @@ body
 {
     height: 20px;
 }
-.color {
+.color
+{
   color: red;
 }
 
-.color.color-one 
+.color.color-one
 {
   color: #8B00FF ;
 }
