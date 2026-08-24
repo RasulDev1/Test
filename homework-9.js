@@ -14,19 +14,33 @@ const furniture = [
   "кухня",
   "шкаф",
 ]
-const needmaterial = "диван"
-const furniturefind = furniture.includes(needmaterial);
-console.log(furniturefind)
+function checkFurniture(needName) {
+  if (typeof needName !== "string") {
+    console.log("Название мебели должно быть строкой");
+    return;
+  }
+
+  if (furniture.includes(needName)) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+checkFurniture("диван");
+checkFurniture("стол");
+checkFurniture(45);
 
 //4
-numbers.reverse()
-furniture.reverse()
-console.log(numbers)
-console.log(furniture)
+function arrayReverse(anyArray) {
+  anyArray.reverse();
+  return anyArray;
+}
+console.log(arrayReverse(numbers));
+console.log(arrayReverse(furniture));
 
 //7
 const commentfilter = commentaries.filter(essence => essence.email.includes(".com"));
-console.log(commentfilter)
+console.log(commentfilter);
 
 //8
 const idchecker = commentaries.map((object) => {
@@ -53,14 +67,14 @@ console.log(invalidding);
 
 //11
 const emailselector = commentaries.reduce((email, comment) => [...email, comment.email], [])
-console.log(emailselector)
+console.log(emailselector);
 
 const emailmapselector = commentaries.map(mapmail => mapmail.email);
-console.log(emailmapselector)
+console.log(emailmapselector);
 
 //12
 let string = emailmapselector.toString();
-console.log(string)
+console.log(string);
 
 string = emailmapselector.join("\n");
-console.log(emailmapselector);
+console.log(string);
