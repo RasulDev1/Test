@@ -32,7 +32,7 @@ checkFurniture(45);
 
 //4
 function arrayReverse(anyArray) {
-  anyArray.reverse();
+  return anyArray.reverse();
   return anyArray;
 }
 console.log(arrayReverse(numbers));
