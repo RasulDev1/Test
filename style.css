@@ -8,12 +8,18 @@ li {
   padding-bottom: 5px;
 }
 body {
-  display: flex;
-  flex-wrap: wrap;
   background-image: url("images/main_background.png");
   background-repeat: no-repeat;
+}
+
+#product-card-list{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 45px;
+  list-style: none;
+  padding: 25px 25px 25px 25px;
+  width: 100%;
 }
 
 .title {
