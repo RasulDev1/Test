@@ -29,12 +29,11 @@ registrationForm.addEventListener("submit", function (event) {
   const password = currentForm.elements["userPassword"].value;
   const passwordConfirm = currentForm.elements["userPasswordConfirm"].value;
 
-if (!currentForm.checkValidity()) {
-  alert("Неправильно введены данные");
-  return;
-}
-
-if (password !== passwordConfirm) {
+    if (password.trim().length === 0) {
+    alert("Пароль не может быть пустым!");
+    return;
+  }
+  if (password !== passwordConfirm) {
     alert("Пароли не совпадают!");
     return;
   }

@@ -26,9 +26,9 @@
         <button class="close-btn" id="closeModalBtn">&times;</button>
         <h2>Регистрация</h2>
         <p>Введите ваши данные</p>
-        <form id="registrationForm" novalidate>
-          <input placeholder="Введите своё имя" name="userName" />
-          <input placeholder="Введите свою фамилию" name="userSurname" />
+        <form id="registrationForm">
+          <input type="text" placeholder="Введите своё имя" name="userName" required />
+          <input type="text" placeholder="Введите свою фамилию" name="userSurname" required />
           <input placeholder="Введите свою дату рождения" name="userData" type ="date" />
           <input placeholder="Введите свой логин" name="userLogin" type ="email" />
           <input placeholder="Введите свой пароль" name="userPassword" type = "password" />
@@ -105,6 +105,6 @@
     <script src="comments.js" defer type="module"></script>
     <script src="homework-10.js" defer type="module"></script>
     <script src="product-cards.js" defer type="module"></script>
-    <script src="homework-11.js" defer type="module"></script>
+    <script src="homework-11.js"></script>
   </body>
 </html>
