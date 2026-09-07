@@ -20,25 +20,6 @@
     <button class="button" id="output-console-log">Вывести сообщение в консоль лог</button>
     <button class="button color" id="change-color">Переключение цвета кнопки</button>
 
-    <button class="button " id="openModalBtn">РЕГИСТРАЦИЯ</button>
-    <div id="myModal" class="modal-overlay">
-      <div class="modal-window">
-        <button class="close-btn" id="closeModalBtn">&times;</button>
-        <h2>Регистрация</h2>
-        <p>Введите ваши данные</p>
-        <form id="registrationForm">
-          <input type="text" placeholder="Введите своё имя" name="userName" required />
-          <input type="text" placeholder="Введите свою фамилию" name="userSurname" required />
-          <input placeholder="Введите свою дату рождения" name="userData" type ="date" />
-          <input placeholder="Введите свой логин" name="userLogin" type ="email" />
-          <input placeholder="Введите свой пароль" name="userPassword" type = "password" />
-          <input placeholder="Повторите свой пароль" name="userPasswordConfirm" type = "password" />
-          <button type="submit">Зарегистрироваться</button>
-        </form>
-      </div>
-    </div>
-
-
     <ul id="product-card-list"></ul>
 
     <template id = "product-card-template">
@@ -97,6 +78,24 @@
   </div>
 
 </footer>
+
+  <button class="button " id="openModalBtn">РЕГИСТРАЦИЯ</button>
+  <div id="myModal" class="modal-overlay">
+    <div class="modal-window">
+      <button class="close-btn" id="closeModalBtn">&times;</button>
+      <h2>Регистрация</h2>
+      <p>Введите ваши данные</p>
+      <form id="registrationForm">
+        <input type="text" placeholder="Введите своё имя" name="userName" required />
+        <input type="text" placeholder="Введите свою фамилию" name="userSurname" required />
+        <input placeholder="Введите свою дату рождения" name="userData" type ="date" />
+        <input placeholder="Введите свой логин" name="userLogin" type ="email" />
+        <input placeholder="Введите свой пароль" name="userPassword" type = "password" />
+        <input placeholder="Повторите свой пароль" name="userPasswordConfirm" type = "password" />
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
 
     <script src="main.js"></script>
     <script src="homework-7.js"></script>
