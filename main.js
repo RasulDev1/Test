@@ -8,10 +8,6 @@ const blackcolorhash = '#000000';
 
 changecolorallbutton.addEventListener('click', () => {
   productCards.forEach((card) => card.style.backgroundColor = greencolorhash);
-const blackcolorhash = '#000000'
-
-changecolorallbutton.addEventListener('click', () => {
-    productCards.forEach((card) => card.style.backgroundColor = greencolorhash)
 });
 
 //Покраска первой карточки
@@ -20,7 +16,6 @@ const changecolorfirstbutton = document.querySelector('#change-color-first');
 
 changecolorfirstbutton.addEventListener('click', () => {
   firstproductcard.style.backgroundColor = bluecolorhash;
-    firstproductcard.style.backgroundColor = bluecolorhash
 });
 
 const opengooglebutton = document.querySelector('#open-google');
@@ -33,22 +28,12 @@ function opengoogle() {
   } else {
     return;
   }
-function opengoogle()
-{
-    const answer = confirm("Вы хотите открыть Google?")
-
-    if(answer === true){
-        window.open('https://www.google.com');
-    } else {
-        return;
-    }
 }
 
 // Вывод консоль лог
 const outputlogbutton = document.querySelector('#output-console-log');
 
 outputlogbutton.addEventListener('click', () => outputConsoleLog('Дз 4'));
-outputlogbutton.addEventListener('click',() => outputConsoleLog('Дз 4'));
 
 function outputConsoleLog(message) {
   alert("10")
@@ -67,7 +52,4 @@ titles.addEventListener('mouseover', function() {
 const colorchanger = document.querySelector('.color');
 colorchanger.addEventListener('click', () => {
   colorchanger.classList.toggle('color-one');
-colorchanger.addEventListener('click', () =>
-{
-    colorchanger.classList.toggle('color-one');
 });
