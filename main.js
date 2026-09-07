@@ -4,6 +4,7 @@ const bluecolorhash = '#0000FF';
 const redcolorhash = '#FF0000';
 const blackcolorhash = '#000000';
 
+
 // 1. Покраска всех карточек
 const productCards = document.querySelectorAll('.product-card');
 const changecolorallbutton = document.querySelector('#change-color-all');
@@ -29,6 +30,7 @@ function opogle() { // Переименовано для ясности, либ�
   if (answer === true) {
     window.open('https://www.google.com');
   }
+
 }
 
 // Изменили название функции, чтобы имя не дублировалось с логикой ниже
