@@ -1,0 +1,198 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #3A3A3A;
+  width: 100%;
+  height: 477px;
+  align-items:center;
+  padding:0;
+  margin:0;
+}
+.blocks {
+  display: flex;
+  justify-content: flex-start; 
+  position: relative;
+  width: 1569px;
+  box-sizing: border-box;
+}
+
+.blocks > article {
+  display: flex;
+  flex-wrap: wrap;
+}
+.firstblock {
+  width: 409px;
+  height: 87px;
+  margin-right:132px;
+  margin-bottom:42px;
+}
+.secondblock {
+  width: 477px;
+  height: 103px;
+  text-align: center;
+  margin-right:373px;
+}
+.thirdblock__title {
+  color: #FFFFFF;
+  font-size: 20px;
+  margin: 0 0 23px 0; /* Отступ только снизу, до элементов списка */
+  font-family: "montserrat", sans-serif;
+  font-weight: normal; 
+}
+.thirdblock__links {
+  list-style-type: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 0;
+  margin: 0 0 17px 0;
+}
+.thirdblock__links > li {
+  font-size: 18px;
+}
+
+.firstblock__title {
+  color: #FFFFFF;
+  font-size: 28px;
+  width: 214px;
+  height: 43px;
+  font-family:"montserrat", sans-serif;
+}
+.firstblock__description {
+  color: #FFFFFF;
+  font-size: 18px;
+  width: 409px;
+  height: 28px;
+  font-family:"montserrat", sans-serif;
+  margin-bottom:42px;
+}
+.secondblock__clue {
+  padding: 0 0 13px 0;
+  color: #FFFFFF;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  white-space: nowrap;
+  margin-bottom:13px;
+}
+.secondblock label {
+  position: relative;
+  display: inline-block;
+}
+.secondblock__text {
+  padding-left:36px;
+  color:#000000BF;
+  font-size: 14px;
+}
+#post-name {
+  width: 477px;
+  height: 61px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.secondblock button {
+  position: absolute;
+  height: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-left: 1px solid #000000; 
+  padding-left: 21px;
+  margin-left: 180px;
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+}
+.link__address {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+.link__line {
+  width: 66px;
+  border: none;
+  border-top: 1px solid #FFFFFF;
+  margin: 0 auto 20px auto;
+}
+.secondblock__buttonline {
+  width: 66px;
+  border: none;
+  border-left: 1px solid #000000;
+  margin: 0 auto 20px auto;
+}
+.secondblockfooter {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+.blocks__image {
+  width: 21px;
+  height: auto;
+}
+.social-icons {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.vk {
+  width:24px;
+  height:14px;
+  object-fit: contain;
+}
+.tg {
+  width:21px;
+  height: 17.61px;
+  object-fit: contain;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-window {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

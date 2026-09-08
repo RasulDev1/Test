@@ -127,25 +127,51 @@ body {
     line-height: 24px;
     font-family:"montserrat", sans-serif;
 }
-.product-card__cost
-{
-    color: #515076;
-    font-size: 20px;
-    font-weight: 700px;
-    line-height: 24px;
-    padding-left: 159px;
-    font-family:"montserrat", sans-serif;
+.product-card__compound {
+  color: #515076;
+  font-size: 13px;
+  font-weight: 400px;
+  line-height: 18px;
+  width: 300px;
+  padding:0;
+  margin-bottom: 5px;
+  list-style-position: inside;
+  font-family:"montserrat", sans-serif;
 }
-.product-card
-{
-    background-color: #F7F7FA;
-    width: 340px;
-    border-radius: 10px;
-    height:573px;
-    padding:25px 25px 25px 25px;
-    display: flex;
-    flex-wrap: wrap;
-    font-family:"montserrat", sans-serif;
+.product-card__ingridients {
+  color: #515076;
+  font-size: 13px;
+  font-weight: 400px;
+  line-height: 18px;
+  width: 300px;
+  margin-bottom: 15px;
+  list-style-position: inside;
+  font-family:"montserrat", sans-serif;
+}
+.product-card__price {
+  color: #515076;
+  font-size: 20px;
+  font-weight: 700px;
+  line-height: 24px;
+  font-family:"montserrat", sans-serif;
+}
+.product-card__cost {
+  color: #515076;
+  font-size: 20px;
+  font-weight: 700px;
+  line-height: 24px;
+  padding-left: 159px;
+  font-family:"montserrat", sans-serif;
+}
+.product-card {
+  background-color: #F7F7FA;
+  width: 340px;
+  border-radius: 10px;
+  height:573px;
+  padding:25px 25px 25px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family:"montserrat", sans-serif;
 }
 .product-card__cost {
   color: #515076;

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="homework-11.css" />
     <link rel="preconnect" href="https://googleapis.com" />
     <link rel="preconnect" href="https://gstatic.com" crossorigin />
     <link
@@ -41,6 +41,61 @@
         <span class="product-card__cost"></span>
       </li>
     </template>
+    <footer class="content">
+  <div class="blocks">
+    
+    <article class="firstblock">
+      <p class="firstblock__title">Product Cards</p>
+      <p class="firstblock__description">У нас самые лучшие продукты для кожи!</p>
+    </article>
+
+    <form class="secondblock">
+      <p class="secondblock__clue">Подпишись на наши акции:</p>
+        <label>
+          <input id="post-name" type="email" name="email" class = "secondblock__text" placeholder="Введи Email...">
+          <button type="submit">Подписаться</button>
+        </label>
+      </form>
+
+    <nav class="thirdblock">
+      <p class="thirdblock__title">Быстрые ссылки</p>
+      <ul class="thirdblock__links">
+        <li>Главная</li>
+        <li>Магазин</li>
+        <li>Контакты</li>
+      </ul>
+    </nav>
+      <div class = "social-icons">
+    <img class = "vk" src="images/tg.png" class="blocks__image" alt="Telegram" />
+    <img class = "tg" src="images/vk.png" class="blocks__image" alt="VK" />
+      </div>
+
+  </div>
+
+  <div class="link">
+    <hr class="link__line">
+    <p class="link__address">www.product-cards.com &copy; all right reserved</p>
+  </div>
+
+</footer>
+
+  <button class="button " id="openModalBtn">РЕГИСТРАЦИЯ</button>
+  <div id="myModal" class="modal-overlay">
+    <div class="modal-window">
+      <button class="close-btn" id="closeModalBtn">&times;</button>
+      <h2>Регистрация</h2>
+      <p>Введите ваши данные</p>
+      <form id="registrationForm">
+        <input type="text" placeholder="Введите своё имя" name="userName" required />
+        <input type="text" placeholder="Введите свою фамилию" name="userSurname" required />
+        <input placeholder="Введите свою дату рождения" name="userData" type ="date" />
+        <input placeholder="Введите свой логин" name="userLogin" type ="email" />
+        <input placeholder="Введите свой пароль" name="userPassword" type = "password" />
+        <input placeholder="Повторите свой пароль" name="userPasswordConfirm" type = "password" />
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
 
     <script src="main.js"></script>
     <script src="homework-7.js"></script>
@@ -49,5 +104,6 @@
     <script src="comments.js" defer type="module"></script>
     <script src="homework-10.js" defer type="module"></script>
     <script src="product-cards.js" defer type="module"></script>
+    <script src="homework-11.js"></script>
   </body>
 </html>
