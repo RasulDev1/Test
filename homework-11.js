@@ -21,7 +21,6 @@ closeBtn.addEventListener('click', () => {
   modal.classList.remove('active');
 });
 
-let user = null;
 
 registrationForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -59,12 +58,10 @@ if (birthDate) {
 
 
 const modalformData = new FormData(currentForm);
-const modaldata = Object.fromEntries(modalformData.entries());
+const user = Object.fromEntries(modalformData.entries());
 delete modaldata.userPasswordConfirm;
-modaldata.createdOn = new Date();
-user = modaldata;
+user.createdOn = new Date();
 console.log("Зарегестрирован пользователь:", user);
-
 modal.classList.remove("active");
 alert("Вы успешно зарегистрированы!");
 
