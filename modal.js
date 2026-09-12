@@ -16,6 +16,11 @@ class Modal {
             }
             return false;
     }
+
+    isValid() {
+        return this.modal.classList.contains('active');
+    }
+
     Initlisten() {
         if (!this.modal) return;
         const closeButton = this.modal.querySelector('.close-btn')
